@@ -26,6 +26,9 @@ void setup()
    servoMain.attach(PIN); // servo on digital pin 10
    Wire.begin();
    Serial.begin(SERIAL_REFRESH_RATE);
+   
+   wireSetup();
+   
 }
 
 
@@ -50,6 +53,9 @@ void servoTest() {
    delay(1000);          // Wait 1 second
    servoMain.write(90);  // Turn Servo back to center position (90 degrees)
    delay(5000);          // Wait 5 seconds
+
+   wireLoop();
+  
   }
 
 
@@ -76,7 +82,55 @@ void servoTest() {
     }
 
 void serialHandler() {
+  }
 
+void wireSetup() {
   
+  Wire.beginTransmission(accel_module);
+  Wire.write(0x2D); //Write to Register
+  Wire.write(0); //Clear Register
+  Wire.endTransmission();
+
+  Wire.beginTransmission(accel_module);
+  Wire.write(0x2D);
+  Wire.write(16);
+  Wire.endTransmission();
   
+  Wire.beginTransmission(accel_module);
+  Wire.write(0x2D);
+  Wire.write(8);
+  Wire.endTransmission();
+  
+  }
+
+void wireLoop() {
+  
+  int xyzReg = 0x32;
+  int x, y, z;
+
+  Wire.beginTransmission(accel_module);
+  Wire.write(xyzReg);
+  Wire.endTransmission();
+  
+  Wire.beginTransmission(accel_module);
+  Wire.requestFrom(accel_module, 6);
+  
+  int i = 0;
+  while(Wire.available()){
+    accelValues[i] = Wire.read();
+    i++;
+    }
+    
+  Wire.endTransmission();
+  
+   x = (( (int)accelValues[1] ) << 8) | accelValues[0];
+   y = (( (int)accelValues[3] ) << 8) | accelValues[2];
+   z = (( (int)accelValues[5] ) << 8) | accelValues[4];
+   
+  sprintf(output, "%d %d %d", x, y, z);
+  Serial.print(output);
+  Serial.write(10);
+  
+  delay(1000);
+
   }
