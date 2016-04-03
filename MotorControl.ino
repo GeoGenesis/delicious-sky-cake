@@ -38,12 +38,12 @@ void loop()
 
 //====================== PRIMARY FUNCTIONS =============================\\
 
+void correct(int accelAngle) {
+//============================
 // Correction Function -
 // Uses the adjust function to solve for correction angle, sends signal to Servo to fix.
 // Input is the angle from the Accelerometer
 //============================
-
-void correct(int accelAngle) {
 
   // Update Speed - How quickly the angle is adjusted (refresh rate) in Milliseconds
   // DEFAULT: 1000
@@ -51,40 +51,45 @@ void correct(int accelAngle) {
 
   // Check to see if value needs to be adjusted (outside of accepted boundries)
   if (accelAngle < BASE_ANGLE - TOLERANCE || accelAngle > BASE_ANGLE + TOLERANCE) {
-    Serial.print("ANGLE TO ADJUST : ");
+  
+  //debug(accelAngle);
+  
+    Serial.print("OFFSET ANGLE : ");
+    servoWrite(adjust(accelAngle), refreshRate);
+    
     Serial.println(adjust(accelAngle));
   }
-  servoWrite(adjust(accelAngle), refreshRate);
+  
+  Serial.println("Adjusted.");
+  Serial.println("==================================================");
 }
 
+void servoWrite(int A, int D) {  
+//============================
 // Servo Control Function -
 // Sends signal to Servo: Makes use of <Servo.h> Library, sends a signal to Servo to change its angle.
 // Input variables for Requested Angle (int A) and Delay between change (int D)
 // Outputs current angle to Serial Monitor
 //============================
 
-void servoWrite(int A, int D) {
   servoMain.write(A);        // Rotate Servo to angle A
   //serialOut(servoMain.read());   // Print Servo angle to Serial Monitor
   delay(D);                   // Wait for D milliseconds
 }
 
-
-//============================
-
-
 //====================== SECONDARY FUNCTIONS =============================\\
 
 
+void servoDiag() {
+//============================
 // Servo Diagnostic Function -
 // Checks the Servo for mechanical failure: uses servoWrite function to rotate Servo Head then pauses.
 // Variable D used for delay between angle changes in milliseconds
 // Function can also be used to assess maximum servo realignment speed by lowering variable D
-
-void servoDiag() {
+//============================
 
   // ! Variable
-  int D = 250;          // Delay between change (milliseconds)
+  int D = 250;  // Delay between changes (milliseconds)
 
   Serial.println("==================================================");
   Serial.print("TEST SPEED : ");
@@ -98,36 +103,52 @@ void servoDiag() {
   for (int i = 0; i <= 180; i = i + 20) {
     servoWrite(i, D);
   }
-
+  
   servoWrite(90, 5000);  // Servo to midpoint and long pause
-
 }
 
+void serialOut(int angleMeasure) {
+//============================
 // Serial Handler -
 // Message Output: Outputs angle to Serial Monitor with formatting
 // Input variable of current angle
+//============================
 
-void serialOut(int angleMeasure) {
   Serial.print("Current Angle:    ");
   Serial.println(angleMeasure);
 }
 
 
+void debug(double accelAngle) {  
+//============================
+// Debugging tool -
+// Print the Accelerometer Angle and Current Servo Angle to the Serial Monitor.
+// Input is the angle from the Accelerometer
+//============================
+  Serial.print("ACCELEROMETER ANGLE: ");
+  Serial.println(accelAngle);
+  Serial.print("SERVO ANGLE: ");
+  Serial.println(servoMain.read());
+    
+}
+
+int adjust(int input) {
+//============================
 // Adjustment Calculator -
 // Solves for distance to the BASE_ANGLE
 // Statement checks to see if current angle is outside of specified boundries
-
-int adjust(int input) {
+//============================
+  
   if (input < BASE_ANGLE ) {
     return (BASE_ANGLE - input);
   }
-
   else if ( input > BASE_ANGLE) {
     return (BASE_ANGLE - input);
   }
-
   else {
     Serial.println("Within Boundries");
     return (BASE_ANGLE);
   }
 }
+
+
