@@ -1,0 +1,32 @@
+==================================================
+TEST SPEED : 250 milliseconds / change
+Current Angle:    0
+Current Angle:    45
+Current Angle:    90
+Current Angle:    135
+Current Angle:    180
+Current Angle:    90
+==================================================
+TEST SPEED : 333 milliseconds / change
+Current Angle:    0
+Current Angle:    45
+Current Angle:    90
+Current Angle:    135
+Current Angle:    180
+Current Angle:    90
+==================================================
+TEST SPEED : 500 milliseconds / change
+Current Angle:    0
+Current Angle:    45
+Current Angle:    90
+Current Angle:    135
+Current Angle:    180
+Current Angle:    90
+==================================================
+TEST SPEED : 250 milliseconds / change
+Current Angle:    180
+Current Angle:    180
+Current Angle:    180
+Current Angle:    180
+Current Angle:    180
+Current Angle:    90

@@ -1,0 +1,823 @@
+ACCELEROMETER ANGLE: 67
+SERVO ANGLE: 93
+ANGLE TO ADJUST : 23
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 169
+SERVO ANGLE: 23
+ANGLE TO ADJUST : -79
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 113
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -23
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 38
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 130
+SERVO ANGLE: 52
+ANGLE TO ADJUST : -40
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 152
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -62
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 24
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 66
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 98
+SERVO ANGLE: 66
+ANGLE TO ADJUST : -8
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 143
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -53
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 109
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -19
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 0
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 90
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 125
+SERVO ANGLE: 90
+ANGLE TO ADJUST : -35
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 132
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -42
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 62
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 28
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 27
+SERVO ANGLE: 28
+ANGLE TO ADJUST : 63
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 83
+SERVO ANGLE: 63
+ANGLE TO ADJUST : 7
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 7
+SERVO ANGLE: 7
+ANGLE TO ADJUST : 83
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 169
+SERVO ANGLE: 83
+ANGLE TO ADJUST : -79
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 160
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -70
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 172
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -82
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 123
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -33
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 109
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -19
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 9
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 81
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 137
+SERVO ANGLE: 81
+ANGLE TO ADJUST : -47
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 40
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 50
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 33
+SERVO ANGLE: 50
+ANGLE TO ADJUST : 57
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 159
+SERVO ANGLE: 57
+ANGLE TO ADJUST : -69
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 18
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 72
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 116
+SERVO ANGLE: 72
+ANGLE TO ADJUST : -26
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 115
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -25
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 97
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -7
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 146
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -56
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 32
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 58
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 127
+SERVO ANGLE: 58
+ANGLE TO ADJUST : -37
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 170
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -80
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 153
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -63
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 19
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 71
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 109
+SERVO ANGLE: 71
+ANGLE TO ADJUST : -19
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 99
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -9
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 21
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 69
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 127
+SERVO ANGLE: 69
+ANGLE TO ADJUST : -37
+Adjusted.
+==================================================
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 73
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 17
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 36
+SERVO ANGLE: 17
+ANGLE TO ADJUST : 54
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 65
+SERVO ANGLE: 54
+ANGLE TO ADJUST : 25
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 65
+SERVO ANGLE: 25
+ANGLE TO ADJUST : 25
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 128
+SERVO ANGLE: 25
+ANGLE TO ADJUST : -38
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 31
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 59
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 114
+SERVO ANGLE: 59
+ANGLE TO ADJUST : -24
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 157
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -67
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 161
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -71
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 173
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -83
+Adjusted.
+==================================================
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 64
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 26
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 28
+SERVO ANGLE: 26
+ANGLE TO ADJUST : 62
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 50
+SERVO ANGLE: 62
+ANGLE TO ADJUST : 40
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 84
+SERVO ANGLE: 40
+ANGLE TO ADJUST : 6
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 116
+SERVO ANGLE: 6
+ANGLE TO ADJUST : -26
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 30
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 60
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 103
+SERVO ANGLE: 60
+ANGLE TO ADJUST : -13
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 142
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 106
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -16
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 9
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 81
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 44
+SERVO ANGLE: 81
+ANGLE TO ADJUST : 46
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 161
+SERVO ANGLE: 46
+ANGLE TO ADJUST : -71
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 73
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 17
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 117
+SERVO ANGLE: 17
+ANGLE TO ADJUST : -27
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 108
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -18
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 168
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -78
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 133
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -43
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 58
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 32
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 61
+SERVO ANGLE: 32
+ANGLE TO ADJUST : 29
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 115
+SERVO ANGLE: 29
+ANGLE TO ADJUST : -25
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 133
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -43
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 105
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -15
+Adjusted.
+==================================================
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 23
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 67
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 36
+SERVO ANGLE: 67
+ANGLE TO ADJUST : 54
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 5
+SERVO ANGLE: 54
+ANGLE TO ADJUST : 85
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 29
+SERVO ANGLE: 85
+ANGLE TO ADJUST : 61
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 15
+SERVO ANGLE: 61
+ANGLE TO ADJUST : 75
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 34
+SERVO ANGLE: 75
+ANGLE TO ADJUST : 56
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 9
+SERVO ANGLE: 56
+ANGLE TO ADJUST : 81
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 121
+SERVO ANGLE: 81
+ANGLE TO ADJUST : -31
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 137
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -47
+Adjusted.
+==================================================
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 105
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -15
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 44
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 46
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 171
+SERVO ANGLE: 46
+ANGLE TO ADJUST : -81
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 78
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 12
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 48
+SERVO ANGLE: 12
+ANGLE TO ADJUST : 42
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 143
+SERVO ANGLE: 42
+ANGLE TO ADJUST : -53
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 5
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 85
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 142
+SERVO ANGLE: 85
+ANGLE TO ADJUST : -52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 132
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -42
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 26
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 64
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 16
+SERVO ANGLE: 64
+ANGLE TO ADJUST : 74
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 177
+SERVO ANGLE: 74
+ANGLE TO ADJUST : -87
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 38
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 144
+SERVO ANGLE: 52
+ANGLE TO ADJUST : -54
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 21
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 69
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 117
+SERVO ANGLE: 69
+ANGLE TO ADJUST : -27
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 11
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 79
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 68
+SERVO ANGLE: 79
+ANGLE TO ADJUST : 22
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 137
+SERVO ANGLE: 22
+ANGLE TO ADJUST : -47
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 98
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -8
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 37
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 53
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 117
+SERVO ANGLE: 53
+ANGLE TO ADJUST : -27
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 174
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -84
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 84
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 6
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 149
+SERVO ANGLE: 6
+ANGLE TO ADJUST : -59
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 11
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 79
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 5
+SERVO ANGLE: 79
+ANGLE TO ADJUST : 85
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 15
+SERVO ANGLE: 85
+ANGLE TO ADJUST : 75
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 75
+SERVO ANGLE: 75
+ANGLE TO ADJUST : 15
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 158
+SERVO ANGLE: 15
+ANGLE TO ADJUST : -68
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 142
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 79
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 11
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 8
+SERVO ANGLE: 11
+ANGLE TO ADJUST : 82
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 152
+SERVO ANGLE: 82
+ANGLE TO ADJUST : -62
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 0
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 90
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 37
+SERVO ANGLE: 90
+ANGLE TO ADJUST : 53
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 114
+SERVO ANGLE: 53
+ANGLE TO ADJUST : -24
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 28
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 62
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 115
+SERVO ANGLE: 62
+ANGLE TO ADJUST : -25
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 108
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -18
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 113
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -23
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 70
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 20
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 46
+SERVO ANGLE: 20
+ANGLE TO ADJUST : 44
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 42
+SERVO ANGLE: 44
+ANGLE TO ADJUST : 48
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 142
+SERVO ANGLE: 48
+ANGLE TO ADJUST : -52
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 25
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 65
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 22
+SERVO ANGLE: 65
+ANGLE TO ADJUST : 68
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 172
+SERVO ANGLE: 68
+ANGLE TO ADJUST : -82
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 127
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -37
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 81
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 9
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 135
+SERVO ANGLE: 9
+ANGLE TO ADJUST : -45
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 52
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 38
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 51
+SERVO ANGLE: 38
+ANGLE TO ADJUST : 39
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 101
+SERVO ANGLE: 39
+ANGLE TO ADJUST : -11
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 170
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -80
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 51
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 39
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 158
+SERVO ANGLE: 39
+ANGLE TO ADJUST : -68
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 177
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -87
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 136
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -46
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 110
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -20
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 140
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -50
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 139
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -49
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 35
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 55
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 106
+SERVO ANGLE: 55
+ANGLE TO ADJUST : -16
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 152
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -62
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 118
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -28
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 15
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 75
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 39
+SERVO ANGLE: 75
+ANGLE TO ADJUST : 51
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 174
+SERVO ANGLE: 51
+ANGLE TO ADJUST : -84
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 83
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 7
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 169
+SERVO ANGLE: 7
+ANGLE TO ADJUST : -79
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 140
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -50
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 145
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -55
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 6
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 84
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 63
+SERVO ANGLE: 84
+ANGLE TO ADJUST : 27
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 146
+SERVO ANGLE: 27
+ANGLE TO ADJUST : -56
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 173
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -83
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 170
+SERVO ANGLE: 0
+ANGLE TO ADJUST : -80
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 18
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 72
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 154
+SERVO ANGLE: 72
+ANGLE TO ADJUST : -64
+Adjusted.
+==================================================
+ACCELEROMETER ANGLE: 60
+SERVO ANGLE: 0
+ANGLE TO ADJUST : 30
+Adjusted.
+==================================================
