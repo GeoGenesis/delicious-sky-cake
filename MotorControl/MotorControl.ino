@@ -37,6 +37,7 @@ void loop()
    
   //  correct(random(0, 180));
   //  delay(3000);
+  speedTest();
   
 }
 
@@ -181,8 +182,9 @@ void customDiag(int A, int B, int I, int wait) {
     }
   }
     
-  Serial.println("RESET");
+  Serial.println("====== RESET ======");
   servoWrite(90, 5000);  // Servo to midpoint and long pause
+  Serial.println("");
 }
 
 void debug(double accelAngle) {
