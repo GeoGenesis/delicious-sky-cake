@@ -5,48 +5,61 @@
    City University, 2016
    THESIS WORK
 
-   References: 
+   MATERIAL REFERENCES: 
+   =====================================================
    http://urrg.eng.usm.my/index.php/en/news-and-articles/20-articles/229-pitch-and-roll-angle-measurement-using-accelerometer-adxl-345-and-arduino
+   http://www.st.com/web/en/resource/technical/document/application_note/CD00268887.pdf
+   http://www.hobbytronics.co.uk/accelerometer-info
+
+     
+   REGISTER REFERENCES:
+   =====================================================
+   0x53 - START TRANSMISSION: ADDRESS OF ACCELEROMETER
+   0x31 - DATA_FORMAT REGISTER
+   0x01 - +/- 4G RANGE SET
+   0x2D - POWER_CTL REGISTER
+   0x08 - ADXL MEASUREMENT MODE
+
+   EQUATION REFERENCE:
+   =====================================================
+   Three-axis Tilt Angle Equations:
+    
+   Roll angle = arctan( -(G_x)/(G_z) )
+   Pitch angle = arctan G_y / ( sqrt(( G_x^2 ) + (G_z^2) ) )
    
 */
 
-#include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
 
 double roll; // Degree measure of angle
 double pitch;
 
-Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
-
-// REGISTER REFERENCE
-// 0x53 - START TRANSMISSION: ADDRESS OF ACCELEROMETER
-// 0x31 - DATA_FORMAT REGISTER
-// 0x01 - +/- 4G RANGE SET
-// 0x2D - POWER_CTL REGISTER
-// 0x08 - ADXL MEASUREMENT MODE
+Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(120015759);
 
 void setup() {
   
+ accel.begin();
  Serial.begin(9600);
- 
+
+  // Initialize accelerometer
+  if(!accel.begin())
+  {
+    /* Throws a Serial Prompt if accelerometer doesn't initialize */
+    Serial.println("ADXL345 not detected - check wiring.");
+    while(1);
+  }
+  
+// Serial Monitor Output
+  accel.setRange(ADXL345_RANGE_4_G); // Set accelerometer sensitivity (+/- 2G, 4G, 8G, 16G);
+  sensorInfo();
+  Serial.println("");
+
 }
 
 void loop() {
   getAcceleration(false);
 
-}
-
-void accelSetup() {
-  
-//  displaySetRange(ADXL345_RANGE_16_G);
-//  displaySetRange(ADXL345_RANGE_8_G);
-//  displaySetRange(ADXL345_RANGE_4_G);
-  
-// Serial Monitor Output
-  accel.setRange(ADXL345_RANGE_2_G); // Set accelerometer sensitivity
-  displaySensorDetails(); // Output Sensor Details to Serial Monitor
-  displayDataRate(); // Output Data Rate to Serial Monitor
 }
 
 void getAcceleration(bool debug){
@@ -67,16 +80,27 @@ void getAcceleration(bool debug){
 }
 
 void calculate(int x, int y, int z) {
-  
-    roll = (atan2(-y, z)*180)/M_PI;
-    pitch = (atan2(x, sqrt(y*y + z*z))*180.0)/M_PI;
 
-    Serial.print("roll: ");
-    Serial.print(roll);
-    Serial.println(" degrees");
-    
-    Serial.print("pitch: ");
-    Serial.println(pitch);
-    Serial.println(" degrees");
+  /* EQUATION REFERENCE
+   * =====================================================
+   * 
+   * Three-axis Tilt Angle Equations:
+   * 
+   * Roll angle = arctan( -(G_x)/(G_z) )
+   * Pitch angle = arctan G_y / ( sqrt(( G_x^2 ) + (G_z^2) ) )
+   * 
+   */
+
+  roll = (atan2(-y, z)*180)/M_PI;
+  pitch = (atan2(x, sqrt(y*y + z*z))*180.0)/M_PI;
+
+  Serial.print("roll: ");
+  Serial.print(roll);
+  Serial.print(" degrees");
+  
+  Serial.print("      pitch: ");
+  Serial.print(pitch);
+  Serial.println(" degrees");
 }
+
 
