@@ -1,58 +1,82 @@
+
+/*
+   Code written by GEORGE GOODSELL
+   Student ID: 120015759
+   City University, 2016
+   THESIS WORK
+
+   References: 
+   http://urrg.eng.usm.my/index.php/en/news-and-articles/20-articles/229-pitch-and-roll-angle-measurement-using-accelerometer-adxl-345-and-arduino
+   
+*/
+
 #include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL345_U.h>
 
-#define accel_module (0x53)
+double roll; // Degree measure of angle
+double pitch;
 
-byte values[6];
-char output[512];
+Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
+
+// REGISTER REFERENCE
+// 0x53 - START TRANSMISSION: ADDRESS OF ACCELEROMETER
+// 0x31 - DATA_FORMAT REGISTER
+// 0x01 - +/- 4G RANGE SET
+// 0x2D - POWER_CTL REGISTER
+// 0x08 - ADXL MEASUREMENT MODE
 
 void setup() {
-  Wire.begin();
-  Serial.begin(9600);
-
-  Wire.beginTransmission(accel_module);
-  Wire.write(0x2D); // Write to this register
-  Wire.write(0); //clear register
-  Wire.endTransmission();
   
-  Wire.beginTransmission(accel_module);
-  Wire.write(0x2D);
-  Wire.write(16);
-  Wire.endTransmission();
-  
-  Wire.beginTransmission(accel_module);
-  Wire.write(0x2D);
-  Wire.write(8);
-  Wire.endTransmission();
-
+ Serial.begin(9600);
+ 
 }
 
 void loop() {
-
-  int xyzReg = 0x32;
-  int x, y, z;
-
-  Wire.beginTransmission(accel_module);
-  Wire.write(xyzReg);
-  Wire.endTransmission();
-
-  Wire.beginTransmission(accel_module);
-  Wire.requestFrom(accel_module, 6);
-
-  int i = 0;
-  while(Wire.available()){
-    values[i] = Wire.read();
-    i++;
-    }
- Wire.endTransmission();
-
- x = (( (int)values[1] ) << 8) | values[0];
- y = (( (int)values[3] ) << 8) | values[2];
- z = (( (int)values[5] ) << 8) | values[4];
- 
-sprintf(output, "%d %d %d", x, y, z);
-Serial.print(output);
-Serial.write(10);
-
-delay(1000);
+  getAcceleration(false);
 
 }
+
+void accelSetup() {
+  
+//  displaySetRange(ADXL345_RANGE_16_G);
+//  displaySetRange(ADXL345_RANGE_8_G);
+//  displaySetRange(ADXL345_RANGE_4_G);
+  
+// Serial Monitor Output
+  accel.setRange(ADXL345_RANGE_2_G); // Set accelerometer sensitivity
+  displaySensorDetails(); // Output Sensor Details to Serial Monitor
+  displayDataRate(); // Output Data Rate to Serial Monitor
+}
+
+void getAcceleration(bool debug){
+
+  sensors_event_t event;
+  accel.getEvent(&event);
+
+  if(debug = true){
+      Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
+      Serial.print("Y: "); Serial.print(event.acceleration.y); Serial.print("  ");
+      Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
+      delay(500);
+      Serial.println("===================================");
+  }
+  
+  calculate(event.acceleration.x,event.acceleration.y,event.acceleration.z);
+  
+}
+
+void calculate(int x, int y, int z) {
+  
+    roll = (atan2(-y, z)*180)/M_PI;
+    pitch = (atan2(x, sqrt(y*y + z*z))*180.0)/M_PI;
+
+    Serial.print("roll: ");
+    Serial.print(roll);
+    Serial.println(" degrees");
+    
+    Serial.print("pitch: ");
+    Serial.println(pitch);
+    Serial.println(" degrees");
+}
+
