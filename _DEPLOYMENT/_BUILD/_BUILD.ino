@@ -5,13 +5,13 @@
    THESIS WORK
 */
 
-/* MATERIAL REFERENCES: 
+/* MATERIAL REFERENCES:
    =====================================================
    http://urrg.eng.usm.my/index.php/en/news-and-articles/20-articles/229-pitch-and-roll-angle-measurement-using-accelerometer-adxl-345-and-arduino
    http://www.st.com/web/en/resource/technical/document/application_note/CD00268887.pdf
    http://www.hobbytronics.co.uk/accelerometer-info
 
-     
+
    REGISTER REFERENCES:
    =====================================================
    0x53 - START TRANSMISSION: ADDRESS OF ACCELEROMETER
@@ -23,10 +23,10 @@
    EQUATION REFERENCE:
    =====================================================
    Three-axis Tilt Angle Equations:
-    
+
    Roll angle = arctan( -(G_x)/(G_z) )
    Pitch angle = arctan G_y / ( sqrt(( G_x^2 ) + (G_z^2) ) )
-   
+
 */
 
 #include <Servo.h>
@@ -43,12 +43,14 @@ int SERVO_PIN = 10; // Servo-connected Pin
 int SYSTEM_REFRESH_RATE = 100;
 
 // Set angle - system will work to adjust itself to this angle
-// DEFAULT: 0
-int BASE_ANGLE = 0;
+// DEFAULT: 90
+int BASE_ANGLE = 90;
 
 // Degrees of Tolerance - how many degrees rig can be rotated before activating system
 // DEFAULT: 5
 int TOLERANCE = 5;
+
+int T_RANGE = BASE_ANGLE - TOLERANCE;
 
 // Angle Measurements - values of system tilt
 double roll; // Degree measure of angle
@@ -64,88 +66,91 @@ void setup()
   // Attach Servo and Accelerometer to board
   accel.begin();
   servoMain.attach(SERVO_PIN); // Servo attached on digital pin 10
-  
+
   Serial.begin(SERIAL_REFRESH_RATE); // Starts Serial Monitor
 
-    // Check to see that Accelerometer is functional
-  if(!accel.begin())
+  // Check to see that Accelerometer is functional
+  if (!accel.begin())
   {
     /* Freezes Serial Prompt if accelerometer doesn't initialize */
     Serial.println("ADXL345 not detected - check wiring.");
-    while(1);
+    while (1);
   }
 
   // Set Accelerometer Sensitivity
   accel.setRange(ADXL345_RANGE_4_G); // Set accelerometer sensitivity (+/- 2G, 4G, 8G, 16G) - DEFAULT: 2G
-  
+
 }
 
 void loop()
 {
-//  sensors_event_t event;
-//  accel.getEvent(&event);
-//  double roll = calculateRoll(event.acceleration.y, event.acceleration.z);
-//  double adjusted = map(roll, -90, 90, 0, 180);
-//  
-//  servoWrite(adjusted, SYSTEM_REFRESH_RATE);
 
-  one2one();
+  //one2one(adjustedAngle());
+  correct(adjustedAngle());
+  
 }
 
 //====================== PRIMARY FUNCTIONS =============================\\
 
-void one2one(){
-//============================
-// Accelerometer-to-Servo communication Function -
-// Sends signal to Servo based on current angle of Accelerometer, maps angle to Servo Range
-// Input variables for Requested Angle (int A) and Delay between change (int D)
-// Outputs current angle to Serial Monitor
-//============================
-
+double adjustedAngle(){
+  //============================
+  // Scaled Angle calculator -
+  // Using event data taken from ADXL345, calculates current roll, and returns a to-scale value based on the reach of the servo head.
+  //============================
+ 
+  // Create events to gather accelerometer data
   sensors_event_t event;
   accel.getEvent(&event);
 
   double roll = calculateRoll(event.acceleration.y, event.acceleration.z);
   double adjusted = map(roll, -90, 90, 0, 180);
-  
-  servoWrite(adjusted, SYSTEM_REFRESH_RATE);
+  return adjusted;
+  }
+
+void one2one(double a) {
+  //============================
+  // Accelerometer-to-Servo communication Function -
+  // Sends signal to Servo based on current angle of Accelerometer, maps angle to Servo Range
+  // Input variables for Adjusted Angle (int a) and updates based on system refresh rate
+  // Outputs current angle to Serial Monitor
+  //============================
+  servoWrite(a, SYSTEM_REFRESH_RATE);
 }
 
-void correct() {
+void correct(double accelAngle) {
   //============================
   // Correction Function -
   // Uses the adjust function to solve for correction angle, sends signal to Servo to fix.
-  // Input is the angle from the Accelerometer
+  // parameter is the mapped angle from the Accelerometer
   //============================
 
-    // Create events for accelerometer data
-    sensors_event_t event;
-    accel.getEvent(&event);
+  // Local Variable: Adjustment Angle
+  int adjustment;
 
-    double accelAngle = calculateRoll(event.acceleration.y, event.acceleration.z);
-
-  // Check to see if value needs to be adjusted (outside of accepted boundries)
-    if (accelAngle < (BASE_ANGLE - TOLERANCE) || accelAngle > (BASE_ANGLE + TOLERANCE)) {
-
-    Serial.print("OFFSET ANGLE : ");
-    servoWrite(adjust(accelAngle), SYSTEM_REFRESH_RATE);
-    
-    Serial.println(adjust(accelAngle));
-  }
-  else{
-    delay(50);
+  // Check to see if value needs to be adjusted (outside of accepted boundries) 
+  
+  if ( accelAngle < T_RANGE ){
+      adjustment = BASE_ANGLE + (BASE_ANGLE - accelAngle);
+      //adjustment = Servo.read() + (BASE_ANGLE - accelAngle);
+      servoWrite(adjustment); 
     }
-  Serial.println("Adjusted.");
-  Serial.println("==================================================");
+  else if ( accelAngle > T_RANGE ) {
+      adjustment = BASE_ANGLE - (BASE_ANGLE + accelAngle);
+      servoWrite(adjustment);
+    }
+  else if ( T_RANGE < accelAngle < BASE_ANGLE ){
+      adjustment = BASE_ANGLE - ( BASE_ANGLE - accelAngle/2 );
+    }
+  delay(SYSTEM_REFRESH_RATE);
 }
 
-void servoWrite(int A){
-//============================
-// Servo Control Function -
-// Sends signal to Servo: Makes use of <Servo.h> Library, sends a signal to Servo to change its angle.
-// Input variables for Requested Angle (int A) and Delay between change (int D)
-// Outputs current angle to Serial Monitor
-//============================
+void servoWrite(int A) {
+  //============================
+  // Servo Control Function -
+  // Sends signal to Servo: Makes use of <Servo.h> Library, sends a signal to Servo to change its angle.
+  // Input variables for Requested Angle (int A) and Delay between change (int D)
+  // Outputs current angle to Serial Monitor
+  //============================
 
   servoMain.write(A);        // Rotate Servo to angle A
   //serialOut(servoMain.read());   // Print Servo angle to Serial Monitor
@@ -169,13 +174,13 @@ void servoWrite(int A, int D) {
 
 
 double calculateRoll(double y, double z) {
-  roll = (atan2(-y, z)*180)/M_PI;
+  roll = (atan2(-y, z) * 180) / M_PI;
   delay(SYSTEM_REFRESH_RATE);
   return roll;
 }
 
 double calculatePitch(double x, double y, double z) {
-  pitch = (atan2(x, sqrt(y*y + z*z))*180.0)/M_PI;
+  pitch = (atan2(x, sqrt(y * y + z * z)) * 180.0) / M_PI;
   return pitch;
 }
 
